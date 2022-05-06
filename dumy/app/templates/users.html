@@ -1,0 +1,11 @@
+{% block a %}
+    <div>
+        {% for i in allusers %}
+        <ul>
+            <li>username : {{i.username}}</li>
+            <li>username : {{i.email}}</li>
+        </ul>
+    </div>
+{% endfor %}
+<a href='{% url "hm" %}'>Home</a><br>    
+{% endblock %}
